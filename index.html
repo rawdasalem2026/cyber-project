@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منصة تعليمية تفاعلية لتعلم مفاهيم الأمن السيبراني">
+  <title>CyberShield Academy | الأمن السيبراني</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">⌁</span>
+      <span><b>CyberShield</b><small>ACADEMY · الأمن السيبراني</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav id="mainNav">
+      <a href="#home" class="nav-link active">الرئيسية</a>
+      <a href="#lessons" class="nav-link">الدروس</a>
+      <a href="#lab" class="nav-link">المعمل التفاعلي</a>
+      <a href="#quiz" class="nav-link">اختبر نفسك</a>
+    </nav>
+    <div class="header-pill"><span class="live-dot"></span> وضع التعلّم T2-Bacc</div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> الوحدة الثانية · الأمن السيبراني</div>
+        <h1>افهم الأمن السيبراني<br><span>بالتجربة، مش بالحفظ.</span></h1>
+        <p>منصة تفاعلية متكاملة لشرح التشفير والمصادقة، وتصميم الشبكات الآمنة، والاستجابة للحوادث وإدارة المخاطر بناءً على منهج البرمجة.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#lessons">ابدأ رحلة التعلّم <span>←</span></a>
+          <a class="btn btn-ghost" href="#lab">جرّب المعمل التفاعلي <span>⌁</span></a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>03</strong><span>دروس رئيسية</span></div>
+          <div><strong>05+</strong><span>تجارب تفاعلية</span></div>
+          <div><strong>100%</strong><span>تعلّم آمن محلي</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-node node-browser"><span>▣</span><small>المتصفح</small></div>
+        <div class="hero-node node-server"><span>▤</span><small>الخادم</small></div>
+        <div class="hero-node node-shield"><span>⬡</span><small>اتصال آمن</small></div>
+        <div class="hero-packet packet-a"></div><div class="hero-packet packet-b"></div>
+        <div class="hero-code">TLS / FIREWALL / DMZ / ZERO-TRUST</div>
+        <div class="visual-caption"><span class="live-dot"></span> محاكاة تفاعلية حيّة</div>
+      </div>
+    </section>
+
+    <!-- Lessons Roadmap -->
+    <section class="section learning-path" id="lessons">
+      <div class="section-heading">
+        <div><div class="eyebrow">خريطة الوحدة</div><h2>ثلاثة دروس، تجربة واحدة متكاملة</h2></div>
+        <p>اختر درسًا لعرض شرحه المفصل وتجاربه الخاصة.</p>
+      </div>
+      <div class="lesson-grid">
+        <button class="lesson-card selected" data-lesson="1">
+          <div class="lesson-top"><span class="lesson-number">02.01</span><span class="lesson-icon">⌑</span></div>
+          <h3>تقنيات التشفير والمصادقة</h3>
+          <p>HTTP وHTTPS وTLS والشهادات الرقمية والمصادقة متعددة العوامل.</p>
+          <div class="lesson-tags"><span>HTTPS</span><span>TLS</span><span>2FA</span></div>
+          <span class="card-arrow">←</span>
+        </button>
+        <button class="lesson-card" data-lesson="2">
+          <div class="lesson-top"><span class="lesson-number">02.02</span><span class="lesson-icon">⌘</span></div>
+          <h3>تصميم أمان الشبكات</h3>
+          <p>جدار الحماية وVPN وDMZ والدفاع في العمق وانعدام الثقة.</p>
+          <div class="lesson-tags"><span>Firewall</span><span>VPN</span><span>DMZ</span></div>
+          <span class="card-arrow">←</span>
+        </button>
+        <button class="lesson-card" data-lesson="3">
+          <div class="lesson-top"><span class="lesson-number">02.03</span><span class="lesson-icon">⌁</span></div>
+          <h3>الاستجابة للحوادث وإدارة المخاطر</h3>
+          <p>مراحل الاستجابة للحوادث وتحديد الاحتمالية والتأثير والأولوية.</p>
+          <div class="lesson-tags"><span>Incident</span><span>Risk</span><span>Recovery</span></div>
+          <span class="card-arrow">←</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Lesson Detail Panel -->
+    <section class="section lesson-detail" id="lessonDetail">
+      <div class="section-heading">
+        <div><div class="eyebrow" id="detailEyebrow">الدرس 2-1</div><h2 id="detailTitle">تقنيات التشفير والمصادقة</h2></div>
+        <span class="section-badge"><span class="live-dot"></span> شرح تفاعلي مفصل</span>
+      </div>
+      <div class="detail-layout">
+        <aside class="concept-panel">
+          <h3>مفاهيم الدرس</h3>
+          <p class="muted">اضغط على المفهوم لقراءة التفاصيل:</p>
+          <div id="conceptList" class="concept-list"></div>
+        </aside>
+        <article class="concept-explainer">
+          <div class="explainer-icon" id="conceptIcon">⌑</div>
+          <div class="explainer-content">
+            <div class="eyebrow">الشرح والتوضيح</div>
+            <h3 id="conceptTitle">ما الفرق بين HTTP وHTTPS؟</h3>
+            <p id="conceptText">HTTP بروتوكول لتبادل طلبات واستجابات الويب، لكنه لا يشفّر الاتصال بذاته. أما HTTPS فيستخدم HTTP عبر اتصال محمي ببروتوكول TLS لتشفير البيانات وإثبات الهوية.</p>
+            <div class="tip-box">
+              <span>✦</span>
+              <div><b>تذكّر دائماً</b><p id="conceptTip">HTTPS يحمي الاتصال أثناء انتقال البيانات عبر الشبكة، ولكنه خطوة أمان أساسية يجب دمجها مع بقية وسائل الحماية.</p></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interactive Lab Section -->
+    <section class="section lab-section" id="lab">
+      <div class="section-heading">
+        <div><div class="eyebrow">Interactive Lab</div><h2>المعمل البرمجي التفاعلي</h2></div>
+        <p>جرّب المحاكاة بنفسك وشاهد كيف تنتقل وتتشفّر البيانات في الواقع.</p>
+      </div>
+
+      <div class="lab-tabs">
+        <button class="lab-tab active" data-lab="web">اختبار التشفير (HTTP / HTTPS)</button>
+        <button class="lab-tab" data-lab="network">محاكاة أمان الشبكة والجدار الناري</button>
+        <button class="lab-tab" data-lab="incident">إدارة المخاطر والاستجابة</button>
+      </div>
+
+      <!-- Lab 1: Web Encryption -->
+      <div class="lab-panel" id="webLab">
+        <div class="lab-toolbar">
+          <div>
+            <span class="status-indicator"></span><b>محاكي التشفير وحركة الحزم</b>
+            <p>اكتب نص الرسالة واختتر البروتوكول لتشفير البيانات فورياً.</p>
+          </div>
+          <div class="segmented">
+            <button class="protocol-btn active" data-protocol="http">HTTP (غير مشفر)</button>
+            <button class="protocol-btn" data-protocol="https">HTTPS (مشفر TLS)</button>
+          </div>
+        </div>
+
+        <div class="input-test-box">
+          <label>تجربة نص الرسالة المراد إرسالها:</label>
+          <input type="text" id="userPayload" value="مرحباً، هذه كلمة المرور السرية 12345" placeholder="اكتب نصاً لتجربة التشفير...">
+        </div>
+
+        <div class="network-stage">
+          <div class="device-card">
+            <div class="device-icon">▣</div>
+            <b>المتصفح</b>
+            <small>Client</small>
+            <span class="device-state" id="clientState">جاهز للإرسال</span>
+          </div>
+          <div class="path-area">
+            <div class="path-label left-label">حزمة البيانات Request <span>→</span></div>
+            <div class="path-line">
+              <div class="path-progress" id="requestProgress"></div>
+              <div class="data-packet" id="requestPacket">Payload</div>
+            </div>
+            <div class="protocol-shield" id="protocolShield">HTTP</div>
+            <div class="network-note" id="networkNote">البيانات تنتقل كنص واضح (Plaintext) يمكن لأي متجسس قراءته!</div>
+          </div>
+          <div class="device-card">
+            <div class="device-icon server-icon">▤</div>
+            <b>الخادم</b>
+            <small>Server</small>
+            <span class="device-state" id="serverState">في الانتظار</span>
+          </div>
+        </div>
+
+        <div class="lab-controls">
+          <button class="btn btn-primary" id="sendRequest">▶ إرسال حزمة البيانات</button>
+          <button class="btn btn-ghost" id="resetWeb">↻ إعادة التجربة</button>
+          <span class="simulation-status" id="webStatus">المحاكاة جاهزة.</span>
+        </div>
+
+        <div class="steps-strip" id="httpsSteps" hidden>
+          <div class="step-chip">1 <span>التحقق من الشهادة الرقمية</span></div>
+          <div class="step-chip">2 <span>مصافحة TLS وتبادل المفاتيح</span></div>
+          <div class="step-chip">3 <span>إرسال البيانات المشفرة</span></div>
+        </div>
+      </div>
+
+      <!-- Lab 2: Network Security Map -->
+      <div class="lab-panel" id="networkLab" hidden>
+        <div class="lab-toolbar">
+          <div><span class="status-indicator"></span><b>محاكاة مسارات الشبكة وجدار الحماية</b><p>اختر المصدر والوجهة واختبر هل يسمح جدار الحماية بالمرور أم يحظره.</p></div>
+        </div>
+        <div class="network-map">
+          <div class="zone zone-internet">
+            <div class="zone-title">🌍 الإنترنت الخارجي</div>
+            <button class="network-node" data-node="internet">👤<span>مستخدم خارجي</span></button>
+          </div>
+          <div class="firewall-column"><div class="brick-wall">▥<small>جدار الحماية 1</small></div></div>
+          <div class="zone zone-dmz">
+            <div class="zone-title">DMZ (المنطقة المعزولة)</div>
+            <button class="network-node" data-node="webserver">▤<span>خادم الويب</span></button>
+            <button class="network-node" data-node="mailserver">✉<span>خادم البريد</span></button>
+          </div>
+          <div class="firewall-column"><div class="brick-wall">▥<small>جدار الحماية 2</small></div></div>
+          <div class="zone zone-internal">
+            <div class="zone-title">🏢 الشبكة الداخلية للمؤسسة</div>
+            <button class="network-node" data-node="database">▤<span>قاعدة البيانات</span></button>
+            <button class="network-node" data-node="employee">▣<span>جهاز الموظف</span></button>
+          </div>
+          <div class="moving-network-packet" id="networkPacket">●</div>
+        </div>
+
+        <div class="network-controls">
+          <label>من (المصدر):</label>
+          <select id="sourceSelect">
+            <option value="internet">مستخدم خارجي (الإنترنت)</option>
+            <option value="employee">جهاز موظف (داخل الشبكة)</option>
+          </select>
+          <label>إلى (الوجهة):</label>
+          <select id="targetSelect">
+            <option value="webserver">خادم الويب (في الـ DMZ)</option>
+            <option value="database">قاعدة البيانات الحساسة (الشبكة الداخلية)</option>
+          </select>
+          <button class="btn btn-primary" id="checkRoute">اختبر مسار الاتصال</button>
+        </div>
+
+        <div class="route-result" id="routeResult">
+          <b>اختر مساراً واضغط "اختبر مسار الاتصال"</b>
+          <p>ستظهر لك النتيجة وفق قواعد أمان الشبكة ودور جدار الحماية والمنطقة المعزولة DMZ.</p>
+        </div>
+      </div>
+
+      <!-- Lab 3: Incident & Risk Tool -->
+      <div class="lab-panel" id="incidentLab" hidden>
+        <div class="lab-toolbar">
+          <div><span class="status-indicator warning"></span><b>محاكي الاستجابة للحوادث وحاسبة المخاطر</b></div>
+        </div>
+        
+        <div class="incident-scenario">
+          <div class="scenario-icon">⚠</div>
+          <div>
+            <b>سيناريو حادث أمني: اكتشاف هجوم على خوادم المؤسسة</b>
+            <p>تتبع خطوات الاستجابة الست المعتمدة لتجاوز الأزمة بأمان.</p>
+          </div>
+        </div>
+
+        <div class="incident-progress" id="incidentProgress">
+          <div class="incident-step current"><span>01</span><b>التحضير</b></div>
+          <div class="incident-step"><span>02</span><b>الاكتشاف</b></div>
+          <div class="incident-step"><span>03</span><b>الاحتواء</b></div>
+          <div class="incident-step"><span>04</span><b>الاستئصال</b></div>
+          <div class="incident-step"><span>05</span><b>الاستعادة</b></div>
+          <div class="incident-step"><span>06</span><b>الدروس المستفادة</b></div>
+        </div>
+
+        <div class="incident-action-card">
+          <div>
+            <span class="eyebrow" id="incidentCounter">المرحلة 1 من 6</span>
+            <h3 id="incidentTitle">التحضير</h3>
+            <p id="incidentDescription">تحديد الأدوار، وتجهيز أدوات المراقبة، ووضع خطة استجابة مسبقة قبل وقوع الحادث.</p>
+          </div>
+          <button class="btn btn-primary" id="nextIncident">المرحلة التالية ←</button>
+        </div>
+
+        <div class="risk-tool">
+          <div>
+            <div class="eyebrow">Risk Assessment Calculator</div>
+            <h3>حاسبة تقييم المخاطر السيبرانية</h3>
+            <p>حدد درجة الاحتمالية والتأثير لحساب أولوية التعامل مع الخطر.</p>
+          </div>
+          <div class="risk-inputs">
+            <label>الاحتمالية
+              <select id="likelihood">
+                <option value="1">1 - منخفضة</option>
+                <option value="2" selected>2 - متوسطة</option>
+                <option value="3">3 - مرتفعة</option>
+              </select>
+            </label>
+            <label>التأثير
+              <select id="impact">
+                <option value="1">1 - منخفض</option>
+                <option value="2" selected>2 - متوسط</option>
+                <option value="3">3 - مرتفع</option>
+              </select>
+            </label>
+            <button class="btn btn-primary" id="evaluateRisk">احسب درجة الخطر</button>
+          </div>
+          <div class="risk-result" id="riskResult">
+            <span class="risk-score">4</span>
+            <div><b>خطر متوسط</b><p>درجة الخطورة = الاحتمالية (2) × التأثير (2)</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section class="section quiz-section" id="quiz">
+      <div class="section-heading">
+        <div><div class="eyebrow">Knowledge Check</div><h2>اختبر معلوماتك في الوحدة</h2></div>
+        <p>أسئلة تفاعلية قيّمة لتقييم فهمك لمفاهيم الأمن السيبراني.</p>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-progress-top">
+          <span id="questionCounter">السؤال 1 من 6</span>
+          <div class="quiz-progress"><span id="quizProgress"></span></div>
+        </div>
+        <div class="quiz-topic" id="questionTopic">تقنيات التشفير والمصادقة</div>
+        <h3 id="questionText">ما الفائدة الأساسية من استخدام HTTPS؟</h3>
+        <div class="answers" id="answers"></div>
+        <div class="quiz-feedback" id="quizFeedback" hidden></div>
+        <div class="quiz-footer">
+          <span id="quizScore">النتيجة: 0</span>
+          <button class="btn btn-primary" id="nextQuestion" disabled>السؤال التالي ←</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Takeaway Banner -->
+    <section class="section takeaway">
+      <div class="takeaway-icon">✦</div>
+      <div>
+        <div class="eyebrow">تذكروا دائمًا</div>
+        <h2>الأمن السيبراني هو خط الدفاع الأول عن مستقبلنا الرقمي.</h2>
+        <p>هذه المنصة تطبيق عملي تعليمي مصمم خصيصاً لمادة البرمجة بالسنة الثانية بكالوريا.</p>
+      </div>
+      <a class="btn btn-ghost" href="#home">العودة للأعلى ↑</a>
+    </section>
+  </main>
+
+  <!-- Footer with simple authorship note -->
+  <footer>
+    <a class="brand footer-brand" href="#home">
+      <span class="brand-mark">⌁</span>
+      <span><b>CyberShield</b><small>ACADEMY</small></span>
+    </a>
+    <p class="copyright-text">جميع الحقوق محفوظة للمبرمجة روضة سالم © 2026</p>
+    <span class="sub-text">مشروع مادة البرمجة والذكاء الاصطناعي</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
